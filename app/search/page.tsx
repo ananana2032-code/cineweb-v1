@@ -1,0 +1,1 @@
+import SearchPage from'../ui/SearchPage';import{searchMedia}from'../lib/tmdb';export default async function Page({searchParams}:{searchParams:Promise<{q?:string}>}){const p=await searchParams,q=p.q?.trim()||'';return <SearchPage query={q} results={q?await searchMedia(q):[]}/>}

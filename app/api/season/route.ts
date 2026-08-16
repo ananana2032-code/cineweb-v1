@@ -1,0 +1,1 @@
+import{NextRequest,NextResponse}from'next/server';import{getSeason}from'../../lib/tmdb';export async function GET(req:NextRequest){const p=new URL(req.url).searchParams,id=p.get('tvId'),s=p.get('season');if(!id||!s)return NextResponse.json({episodes:[]},{status:400});return NextResponse.json({episodes:await getSeason(id,s)})}

@@ -1,24 +1,14 @@
-# CineWeb V1
+# CineWeb V2.1 — TV ao Vivo
 
-V1 de um catálogo moderno de filmes e séries para Replit.
+Novidades: TV ao Vivo, player HLS, busca e categorias de canais.
 
-## Recursos
-- Home responsiva estilo streaming
-- Hero em destaque
-- Trilhos de Em alta, Filmes e Séries
-- Busca instantânea
-- Modal de detalhes
-- Integração opcional com TMDB
-- Modo demonstração quando não existe token
+## Atualizar
+1. Não apague seu `.env.local`.
+2. Substitua os demais arquivos pelos desta versão.
+3. Rode `npm.cmd install`.
+4. Rode `npm.cmd run dev`.
+5. Teste `/live`.
+6. Depois: `git add .`, `git commit -m "CineWeb V2.1 TV ao Vivo"`, `git push`.
 
-## Replit
-1. Crie um novo Repl importando este projeto/ZIP.
-2. No Shell:
-   npm install
-   npm run dev
-3. Em Secrets, crie:
-   TMDB_READ_TOKEN = seu token Bearer do TMDB
-4. Reinicie o Repl.
-
-## Importante
-O TMDB fornece metadados, imagens e informações do catálogo. Ele não fornece os arquivos completos dos filmes para streaming. Use apenas vídeos próprios, licenciados, trailers ou fontes autorizadas.
+## Cadastrar canais autorizados
+Edite `app/lib/live.ts` e adicione apenas streams próprios, licenciados ou oficialmente liberados.
