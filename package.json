@@ -1,6 +1,6 @@
 {
-  "name": "cineweb-v2-1",
-  "version": "2.1.0",
+  "name": "cineweb-v2-2",
+  "version": "2.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
